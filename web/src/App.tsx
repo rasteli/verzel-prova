@@ -12,11 +12,7 @@ export function App() {
       <Switch>
         <Route exact path="/" component={Dashboard} />
         <DynamicRoute type="private" path="/profile" component={Profile} />
-        <DynamicRoute
-          type="public"
-          path="/user/:userId/reset-password"
-          component={ResetPassword}
-        />
+        <Route path="/user/:userId/reset-password" component={ResetPassword} />
         <DynamicRoute
           type="public"
           path="/auth"
