@@ -27,6 +27,10 @@ Clone o repositório em sua máquina:
 git clone https://github.com/rasteli/verzel-prova.git
 ```
 
+Ou baixe o arquivo zip:
+
+[download](file:///home/rasteli/Pictures/download.png)
+
 No diretório de cada aplicação _`(backend e web)`_, instale as dependências do projeto:
 
 **Yarn**
