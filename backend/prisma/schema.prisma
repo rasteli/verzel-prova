@@ -1,0 +1,41 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id       String @id @default(uuid())
+  email    String
+  password String
+  username String
+
+  @@map("users")
+}
+
+model Module {
+  id          String  @id @default(uuid())
+  name        String?
+  creator_id  String
+  description String?
+
+  classes Class[]
+
+  @@map("modules")
+}
+
+model Class {
+  id          String  @id @default(uuid())
+  name        String?
+  begins_at   String?
+  creator_id  String
+  description String?
+
+  module    Module @relation(fields: [module_id], references: [id], onDelete: Cascade)
+  module_id String
+
+  @@map("classes")
+}

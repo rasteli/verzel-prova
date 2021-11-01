@@ -1,0 +1,15 @@
+.forgotPassword {
+  border: none;
+  background: none;
+
+  cursor: pointer;
+  color: #575757;
+  align-self: flex-end;
+
+  font-size: 18px;
+  margin-top: 20px;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}

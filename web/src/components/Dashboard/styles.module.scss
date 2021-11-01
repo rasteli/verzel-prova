@@ -1,0 +1,166 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+
+  height: 90px;
+
+  background-color: #74aaea;
+  position: relative;
+  box-shadow: 0px 2px 5px #00000045;
+
+  h1 {
+    flex-grow: 1;
+    color: #00295a;
+    font-size: 36px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+
+    h5 {
+      color: #00295a;
+      font-weight: 400;
+      font-size: 18px;
+    }
+
+    .signButton {
+      text-decoration: none;
+      background: none;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: 500;
+
+      outline: none;
+      color: #003472;
+      border-radius: 15px;
+      border: 2px solid #003472;
+
+      cursor: pointer;
+      margin-left: 30px;
+      transition: color 95ms ease-out;
+      transition: background-color 95ms ease-out;
+
+      &:hover {
+        color: #9bbadf;
+        background-color: #003472;
+      }
+    }
+  }
+
+  .profileButton {
+    margin-left: 10px;
+
+    filter: invert(12%) sepia(37%) saturate(6013%) hue-rotate(203deg)
+      brightness(98%) contrast(101%);
+  }
+}
+
+.dashboardContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .moduleHelp {
+    align-self: flex-start;
+    margin-left: 50px;
+
+    h3 {
+      color: #00295a;
+      font-weight: 400;
+      font-size: 30px;
+    }
+
+    p {
+      color: #013c83;
+      font-weight: 300;
+      font-size: 20px;
+    }
+  }
+
+  .searchBox {
+    width: 50vw;
+    height: 60px;
+
+    margin: 20px;
+    margin-bottom: -30px;
+    padding-left: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px #00000045;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #d8d8d8;
+
+    img {
+      margin-right: 15px;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      background: none;
+
+      font-size: 18px;
+      color: #7a7a7a;
+      width: 100%;
+    }
+  }
+}
+
+.moduleGrid {
+  display: grid;
+  grid-template-columns:
+    minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr)
+    minmax(200px, 1fr) minmax(200px, 1fr);
+
+  .module {
+    display: flex;
+    align-items: center;
+
+    margin: 20px;
+    padding: 20px;
+    background-color: #cfe1ee;
+
+    cursor: pointer;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px #00000045;
+
+    .codeImg {
+      margin-right: 15px;
+      filter: invert(33%) sepia(59%) saturate(2675%) hue-rotate(207deg)
+        brightness(103%) contrast(98%);
+    }
+
+    .camImg {
+      margin-right: 5px;
+      filter: invert(39%) sepia(85%) saturate(494%) hue-rotate(161deg)
+        brightness(97%) contrast(86%);
+    }
+
+    h4 {
+      color: #0051ca;
+      display: inline-block;
+      word-break: break-all;
+    }
+
+    footer {
+      right: 5px;
+      bottom: 5px;
+      position: absolute;
+
+      display: flex;
+      align-items: center;
+      color: #2781c2;
+    }
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+}
