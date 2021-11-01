@@ -1,3 +1,10 @@
+<p align="center">
+  <a href="#tecnologias-utilizadas">Tecnologias</a>&nbsp;&nbsp;|&nbsp;
+  <a href="#instalação-do-projeto">Instalação</a>&nbsp;&nbsp;|&nbsp;
+  <a href="#variáveis-de-ambiente">Ambiente</a>&nbsp;&nbsp;|&nbsp;
+  <a href="#banco-de-dados">Database</a>
+</p>
+
 # Catalogação de aulas
 
 ## Tecnologias utilizadas
