@@ -29,7 +29,7 @@ git clone https://github.com/rasteli/verzel-prova.git
 
 Ou baixe o arquivo zip:
 
-[download](download.png)
+![download](download.png)
 
 No diretório de cada aplicação _`(backend e web)`_, instale as dependências do projeto:
 
