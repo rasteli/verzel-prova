@@ -24,7 +24,7 @@ export function ResetPassword() {
 
     if (!password && !confirmPassword) return
     if (password !== confirmPassword)
-      return setError("As senhas não conincidem!")
+      return setError("As senhas não coincidem!")
 
     try {
       setError("")
