@@ -1,25 +1,25 @@
 import styles from "./styles.module.scss"
 
 import { SVG } from "../SVG"
+import { Class } from "../../contexts/ModuleContext"
 
 import clock from "../../assets/svg/clock.svg"
 import terminal from "../../assets/svg/terminal.svg"
-import { Class } from "../../contexts/ModuleContext"
 
 type ClassModalProps = {
-  name: string
   open: boolean
-  description: string
+  moduleName: string
   classes: Class[] | null
+  moduleDescription: string
   setOpen: (open: boolean) => void
 }
 
 export function ClassModal({
   open,
-  name,
   classes,
   setOpen,
-  description
+  moduleName,
+  moduleDescription
 }: ClassModalProps) {
   if (!open) return null
 
@@ -29,8 +29,8 @@ export function ClassModal({
 
       <div className={styles.modal}>
         <header>
-          <h1>{name}</h1>
-          <h4>{description}</h4>
+          <h1>{moduleName}</h1>
+          <h4>{moduleDescription}</h4>
         </header>
 
         <main>

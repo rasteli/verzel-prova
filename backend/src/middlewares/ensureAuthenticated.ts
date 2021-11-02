@@ -9,7 +9,7 @@ export function ensureAuthenticated(
   const access_token = request.headers.authorization // -> Bearer {token}
 
   if (!access_token) {
-    return response.status(401).json({ error: "token.required" })
+    return response.status(401).json({ data: { error: "token.required" } })
   }
 
   const [, token] = access_token.split(" ") // -> {token}
@@ -21,6 +21,6 @@ export function ensureAuthenticated(
 
     return next()
   } catch (error) {
-    return response.status(401).json({ error: "token.invalid" })
+    return response.status(401).json({ data: { error: "token.invalid" } })
   }
 }

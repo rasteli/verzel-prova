@@ -5,15 +5,13 @@ import { SVG } from "../SVG"
 import { Alert } from "../Alert"
 import { useAuth } from "../../contexts/AuthContext"
 
-// import styles from "./styles.module.scss"
-import padlock from "../../assets/svg/padlock.svg"
 import styles from "./styles.module.scss"
+import padlock from "../../assets/svg/padlock.svg"
 
 export function ResetPassword() {
   const history = useHistory()
   const { resetPassword } = useAuth()
   const { userId } = useParams<{ userId: string }>()
-  console.log(userId)
 
   const [error, setError] = useState("")
   const [password, setPassword] = useState("")

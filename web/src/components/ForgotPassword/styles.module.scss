@@ -1,20 +1,26 @@
-.text {
+.forgotContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 410px;
 
-  h1 {
-    color: #00295a;
-    font-weight: 400;
-    font-size: 40px;
-  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 410px;
 
-  p {
-    margin-top: 20px;
-    color: #184883;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 22px;
+    h1 {
+      color: #00295a;
+      font-weight: 400;
+      font-size: 40px;
+    }
+
+    p {
+      margin-top: 20px;
+      color: #184883;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 22px;
+    }
   }
 }

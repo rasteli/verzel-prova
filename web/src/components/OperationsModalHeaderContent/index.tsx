@@ -1,5 +1,7 @@
+import { type } from "../ProfileOperationsModal"
+
 type HeaderContentProps = {
-  type: "create" | "update"
+  type: type
   your?: string
   whatIs?: string
 }

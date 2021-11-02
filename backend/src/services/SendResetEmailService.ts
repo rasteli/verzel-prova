@@ -1,13 +1,6 @@
 import { prismaClient } from "../prisma"
 import sendGrid from "@sendgrid/mail"
 
-// Foi utilizada uma conta teste do serviço sendgrid.
-// Como foi usada apenas para este projeto e para
-// que aqueles que testarem o código não precisem
-// criar suas próprias contas, não há problemas (eu acho)
-// em expor as informações de que o serviço necessita:
-// id do template e chave da api.
-
 export class SendResetEmailService {
   async execute(email: string) {
     let user = await prismaClient.user.findFirst({

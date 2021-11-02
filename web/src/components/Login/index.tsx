@@ -41,7 +41,7 @@ export function Login({ toggleSignUp, toggleLogin }: LoginProps) {
   }
 
   return (
-    <>
+    <div className={styles.loginContainer}>
       <h1>Entre na sua conta</h1>
 
       {error && <Alert variant="error">{error}</Alert>}
@@ -86,6 +86,6 @@ export function Login({ toggleSignUp, toggleLogin }: LoginProps) {
           Crie sua conta
         </button>
       </footer>
-    </>
+    </div>
   )
 }

@@ -42,7 +42,7 @@ export function ForgotPassword({ toggleLogin }: ForgotPWDProps) {
   }
 
   return (
-    <>
+    <div className={styles.forgotContainer}>
       <div className={styles.text}>
         <h1>Recupere sua senha</h1>
 
@@ -79,6 +79,6 @@ export function ForgotPassword({ toggleLogin }: ForgotPWDProps) {
           Faça login
         </button>
       </footer>
-    </>
+    </div>
   )
 }

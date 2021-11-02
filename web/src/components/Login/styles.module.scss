@@ -1,15 +1,23 @@
-.forgotPassword {
-  border: none;
-  background: none;
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  cursor: pointer;
-  color: #575757;
-  align-self: flex-end;
+  form {
+    .forgotPassword {
+      border: none;
+      background: none;
 
-  font-size: 18px;
-  margin-top: 20px;
+      cursor: pointer;
+      color: #575757;
+      align-self: flex-end;
 
-  &:hover {
-    filter: brightness(0.8);
+      font-size: 18px;
+      margin-top: 20px;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
   }
 }

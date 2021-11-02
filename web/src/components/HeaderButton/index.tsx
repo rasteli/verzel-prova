@@ -10,8 +10,8 @@ type HeaderButtonProps = {
 export function HeaderButton({
   path,
   title,
-  className,
-  children
+  children,
+  className
 }: HeaderButtonProps) {
   return (
     <div>

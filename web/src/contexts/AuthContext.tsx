@@ -63,6 +63,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
     setUser(user)
     localStorage.setItem("@verzel:token", token)
+    api.defaults.headers.common.authorization = `Bearer ${token}`
   }
 
   async function signUp(username: string, email: string, password: string) {

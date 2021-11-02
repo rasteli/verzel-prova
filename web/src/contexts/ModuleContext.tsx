@@ -105,17 +105,17 @@ export function ModuleProvider({ children }: ModuleProviderProps) {
 
   useEffect(() => {
     async function setModulesWithAuth() {
-      if (user) {
-        const response = await api.get<Module>(`/modules?user_id=${user.id}`)
+      const response = await api.get<Module>(`/modules?user_id=${user?.id}`)
 
-        setProfileModules(response.data)
-      }
+      setProfileModules(response.data)
     }
 
-    setModulesWithAuth()
+    if (user) {
+      setModulesWithAuth()
 
-    const timer = setTimer(2000, setModulesWithAuth)
-    return () => clearInterval(timer)
+      const timer = setTimer(2000, setModulesWithAuth)
+      return () => clearInterval(timer)
+    }
   }, [user])
 
   async function createModule(name: string, description: string) {

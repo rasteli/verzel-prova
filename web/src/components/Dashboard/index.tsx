@@ -36,14 +36,14 @@ export function Dashboard() {
         {!user ? (
           <HeaderButton
             path="/auth"
-            title={"Tem algo a ensinar?"}
+            title="Tem algo a ensinar?"
             className={styles.signButton}
           >
             CADASTRE-SE
           </HeaderButton>
         ) : (
           <HeaderButton
-            title={"Perfil"}
+            title="Perfil"
             path="/profile"
             className={styles.profileButton}
           >
@@ -91,11 +91,11 @@ export function Dashboard() {
       </div>
 
       <ClassModal
-        description={moduleDesc}
-        name={moduleName}
-        classes={classes}
         open={open}
+        classes={classes}
         setOpen={setOpen}
+        moduleName={moduleName}
+        moduleDescription={moduleDesc}
       />
     </>
   )
